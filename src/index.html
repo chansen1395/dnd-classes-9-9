@@ -1,16 +1,55 @@
 <html lang="en-US">
+
 <head>
-  <title>Weather</title>
+  <title>D&D Class Info</title>
 </head>
+
 <body>
   <div class="container">
-    <h1>Get Weather Conditions From Anywhere!</h1>
-    <label for="location">Enter a location:</label>
-    <input id="location" type="text">
-    <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
-    <div class="showErrors"></div>
-    <div class="showHumidity"></div>
-    <div class="showTemp"></div>
+  <div class = "jumbotron">
+    <h1>Get Skills & Proficiencies for a D&D Class:</h1><hr>
+    <div class = "lead">
+    <label for="class-select">Select a class:</label>
+    <select name="class-select" id="class-selection">
+      <option value="barbarian">Barbarian</option>
+      <option value="bard">Bard</option>
+      <option value="cleric">Cleric</option>
+      <option value="druid">Druid</option>
+      <option value="fighter">Fighter</option>
+      <option value="monk">Monk</option>
+      <option value="paladin">Paladin</option>
+      <option value="ranger">Ranger</option>
+      <option value="rogue">Rogue</option>
+      <option value="sorcerer">Sorcerer</option>
+      <option value="warlock">Warlock</option>
+      <option value="wizard">Wizard</option>
+    </select>
+    <button class="btn-success" id="classSubmit">Get Info</button>
+  </div>
+  </div>
+
+   <div class="showErrors"></div>
+
+    <div class="showDndClass"></div>
+    <div class="container row">
+      <div class="col-4">
+        <h4>Skills:</h4>
+        <hr>
+        <div class="showSkills card card-body"></div>
+      </div>
+
+      <div class="col-4">
+        <h4>Proficiencies:</h4>
+        <hr>
+        <div class="showProfs card card-body"></div>
+      </div>
+      <div class="col-4">
+        <h4>Spellcasting:</h4>
+        <hr>
+        <div class="showSpells card card-body"></div>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
